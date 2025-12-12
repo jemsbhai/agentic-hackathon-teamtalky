@@ -1,0 +1,98 @@
+Agentic AI Hackathon – GitHub Setup & Submission Guide
+Welcome! This template is your starting point for the Agentic AI App Hackathon. It gives you a consistent structure, built-in tools, and clear documentation to build and share your project efficiently.
+To participate in the hackathon, you’ll need to create a free GitHub account and fork our hackation submission template. 
+This will allow you to access the hackathon, submit your project, and collaborate with your team.
+If you already have a GitHub account, you can use your existing one. If you are participating as a team, the team captain can add other team members as collaborators.
+In-Person FAQ’s
+Virtual FAQ’s
+
+Step 1: Fork & Set Up the Repository
+1. Fork the Official GitHub Template
+
+https://github.com/odsc2015/agentic-hackathon-template
+
+Important: Please NAME your fork exactly as your team name, this is how we track your submission. If you participate as an individual, name it as your first and last name.
+
+Step 2: Build Your Agent
+Use the src/ folder to build your Agentic AI app. Your agent should follow a common architecture including:
+Core Agent Workflow:
+1.	Receive user input
+
+2.	(Optional) Retrieve relevant memory
+
+3.	Plan sub-tasks (ReAct, BabyAGI, or other patterns)
+
+4.	Call tools or external APIs (Gemini API)
+
+5.	Generate final response
+
+Core Modules to Implement: (just the concepts)
+●	planner.py: break down user goals into sub-tasks
+
+●	executor.py: logic for calling LLMs or tools
+
+●	memory.py: log or store memory, if used
+
+ Step 3: Use Gemini API
+●	All teams MUST use the Google Gemini API in their solution.
+
+●	Get your free API key via Google AI Studio.
+
+●	Store your API key securely using a .env file or config pattern - do not commit your key to the repo.
+
+●	Demonstrate Gemini’s usage clearly in your code and documentation.
+
+Step 4: Fill in the Required Documentation
+All documentation files are in the root of your repo:
+●	README.md:
+ Setup instructions, dependencies, and how to run your agent.
+
+●	ARCHITECTURE.md:
+ Sketch your system’s design (ASCII, PNG/JPG, or diagram). Include:
+
+○	Planner, executor, memory structure
+
+○	Tool integrations (Gemini, search APIs, etc.)
+
+○	Logging and observability
+
+●	EXPLANATION.md:
+ Describe your agent’s reasoning process, memory usage, planning style, tool integration, and known limitations.
+
+●	DEMO.md:
+ Paste a public video link + timestamps:
+
+○	00:00–00:30 - Intro & setup
+
+○	00:30–01:30 - User input → Planning
+
+○	01:30–02:30 - Tool calls & memory
+
+○	02:30–03:30 - Final output & edge case handling
+
+ Step 5: Record and Submit
+●	Record a 3–5 minute video demo walking through your agent.
+
+●	Highlight how your agent plans, retrieves memory, and uses Gemini API.
+
+●	Upload to YouTube (unlisted), Google Drive (public), Loom, etc.
+
+●	Paste the link in DEMO.md.
+❗ Submissions without a valid, hosted public video will not be reviewed. (One person can do the video for the whole team)
+ Step 6: Submit via Form (follow the deadlines listed in the form)
+You’ll submit the following:
+●	Your GitHub repository URL (public)
+
+●	Your video link
+
+●	Team name, and all the team mem (important)
+The form link is here.
+📋 Final Submission Checklist
+✅ Forked repo named after your team or your first and last name if you are participating as an individual
+ ✅ Agent built and tested under src/
+ ✅ README.md, ARCHITECTURE.md, EXPLANATION.md, DEMO.md all filled
+ ✅ Gemini API integrated
+ ✅ Video demo is hosted and linked
+ ✅ Submission form completed
+
+
